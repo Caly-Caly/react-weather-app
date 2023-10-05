@@ -6,6 +6,7 @@ export default function App() {
     <div className="App">
       {" "}
       Weather App
+      <br />
       <a href="https://github.com/Caly-Caly/react-weather-app">Public Source</a>
     </div>
   );
