@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import FormattedTimeStamp from "./FormattedTimeStamp";
 
 export default function Weather(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
@@ -16,6 +17,7 @@ export default function Weather(props) {
       feels_like: response.data.temperature.feels_like,
       iconUrl: response.data.condition.icon_url,
       iconInfo: response.data.condition.icon,
+      date: new Date(response.data.time * 1000),
     });
   }
 
@@ -43,7 +45,9 @@ export default function Weather(props) {
         </form>
         <h1>{weatherData.city}</h1>
         <ul className="timeDateInfo">
-          <li>Friday 07:36</li>
+          <li>
+            <FormattedTimeStamp date={weatherData.date} />
+          </li>
           <li>{weatherData.conditions}</li>
         </ul>
         <div className="row mt-3">
@@ -56,7 +60,7 @@ export default function Weather(props) {
             <ul>
               <li>Feels Like: {Math.round(weatherData.feels_like)}°C</li>
               <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind Speed: {Math.round(weatherData.wind)}mph</li>
+              <li>Wind Speed: {Math.round(weatherData.wind)} MPH</li>
             </ul>
           </div>
         </div>
