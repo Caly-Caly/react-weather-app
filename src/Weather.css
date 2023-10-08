@@ -1,0 +1,68 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.Weather {
+  border: 1px solid #dadde1;
+  box-shadow: 5px 6px 7px rgb(131, 131, 131);
+  padding: 15px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 750px;
+}
+
+.Weather form {
+  margin-bottom: 20px;
+}
+
+.Weather h1 {
+  color: #060b49;
+  font-size: 34px;
+  font-weight: 100px;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.Weather img {
+  bottom: 16px;
+  height: 82px;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+.Weather .timeDateInfo {
+  font-size: 14px;
+  font-weight: 100px;
+  line-height: 20px;
+  list-style: none;
+  margin-top: 10px;
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+
+.Weather .temp {
+  font-size: 62px;
+  font-weight: 500;
+}
+
+.Weather .unit {
+  font-size: 18px;
+  position: relative;
+  top: -32px;
+  right: 45x;
+}
+.Weather li {
+  font-size: 16px;
+  font-weight: 100px;
+  line-height: 20px;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
