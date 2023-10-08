@@ -1,7 +1,6 @@
 import React from "react";
 import Weather from "./Weather";
 import "./App.css";
- 
 
 export default function App() {
   return (
@@ -9,7 +8,7 @@ export default function App() {
       <div className="container">
         {" "}
         <h1>Weather App</h1>
-        <Weather />
+        <Weather defaultCity="Brooklyn" />
         <footer>
           {" "}
           This project was coded by Calysta Aponte and is{" "}
