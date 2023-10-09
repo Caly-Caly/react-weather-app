@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedTimeStamp from "./FormattedTimeStamp";
+import WeatherTempUnits from "./WeatherTempUnits";
 
 export default function WeatherData(props) {
   return (
@@ -14,8 +15,7 @@ export default function WeatherData(props) {
       <div className="row mt-3">
         <div className="col-6">
           <img src={props.data.iconUrl} alt={props.data.iconInfo} />
-          <span className="temp">{Math.round(props.data.temperature)}</span>
-          <span className="unit">°C</span>
+            <WeatherTempUnits celsius={props.data.temperature}/>
         </div>
         <div className="col-6">
           <ul>
