@@ -33,6 +33,23 @@ body {
   position: relative;
 }
 
+.Weather li {
+  font-size: 16px;
+  font-weight: 100px;
+  line-height: 20px;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather a {
+  text-decoration: none;
+}
+
 .Weather .timeDateInfo {
   font-size: 14px;
   font-weight: 100px;
@@ -53,16 +70,4 @@ body {
   position: relative;
   top: -32px;
   right: 45x;
-}
-.Weather li {
-  font-size: 16px;
-  font-weight: 100px;
-  line-height: 20px;
-  list-style: none;
-  text-transform: capitalize;
-}
-
-.Weather ul {
-  margin: 0;
-  padding: 0;
 }
