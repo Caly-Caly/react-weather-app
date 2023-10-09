@@ -13,6 +13,8 @@ export default function App() {
           This project was coded by Calysta Aponte and is{" "}
           <a
             href="https://github.com/Caly-Caly/react-weather-app"
+            rel="noreferrer"
+            target="_blank"
           >
             open-sourced on Github
           </a>
