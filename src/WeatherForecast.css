@@ -1,0 +1,17 @@
+.WeatherForecast{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.WeatherForecast-temps{
+    margin-top: 5px;
+}
+
+.WeatherForecast-temp-min{
+    opacity: .7;
+    margin-left: 5px;
+}
+
+.WeatherForecast-day {
+    margin-bottom: 4px;
+}

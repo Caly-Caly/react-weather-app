@@ -1,6 +1,8 @@
 import React from "react";
 import FormattedTimeStamp from "./FormattedTimeStamp";
+import WeatherIcons from "./WeatherIcons";
 import WeatherTempUnits from "./WeatherTempUnits";
+
 
 export default function WeatherData(props) {
   return (
@@ -13,9 +15,11 @@ export default function WeatherData(props) {
         <li>{props.data.conditions}</li>
       </ul>
       <div className="row mt-3">
-        <div className="col-6">
-          <img src={props.data.iconUrl} alt={props.data.iconInfo} />
-            <WeatherTempUnits celsius={props.data.temperature}/>
+        <div className="col-6 ">
+          <span>
+            <WeatherIcons code={props.data.icon} size={72} />
+          </span>
+          <WeatherTempUnits celsius={props.data.temperature} />
         </div>
         <div className="col-6">
           <ul>

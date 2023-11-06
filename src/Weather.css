@@ -25,11 +25,8 @@ body {
   margin-left: 15px;
 }
 
-.Weather img {
-  bottom: 16px;
-  height: 82px;
-  border-top-left-radius: 11px;
-  border-bottom-left-radius: 10px;
+.Weather canvas {
+  margin-bottom: -11px;
   position: relative;
 }
 
@@ -61,6 +58,7 @@ body {
 }
 
 .Weather .temp {
+  margin-left: 12px;
   font-size: 62px;
   font-weight: 500;
 }
