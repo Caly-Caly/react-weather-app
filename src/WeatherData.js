@@ -21,7 +21,7 @@ export default function WeatherData(props) {
           </span>
           <WeatherTempUnits celsius={props.data.temperature} />
         </div>
-        <div className="col-6">
+        <div className="col-6 ">
           <ul>
             <li>Feels Like: {Math.round(props.data.feels_like)}°C</li>
             <li>Humidity: {props.data.humidity}%</li>

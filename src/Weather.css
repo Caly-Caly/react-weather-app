@@ -2,6 +2,14 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+:any-link{
+  color:#8EAFE4;
+}
+
+.Weather a {
+  text-decoration: none;
+}
+
 .Weather {
   border: 1px solid #dadde1;
   box-shadow: 5px 6px 7px rgb(131, 131, 131);
@@ -11,23 +19,24 @@ body {
   max-width: 750px;
 }
 
+.Weather canvas {
+  margin-left: 5px;
+  margin-bottom: -11px;
+  position: relative;
+}
+
 .Weather form {
   margin-bottom: 20px;
 }
 
 .Weather h1 {
-  color: #060b49;
+  color: #000000;
   font-size: 34px;
   font-weight: 100px;
   line-height: 28px;
   margin-top: 10px;
   margin-bottom: 0;
   margin-left: 15px;
-}
-
-.Weather canvas {
-  margin-bottom: -11px;
-  position: relative;
 }
 
 .Weather li {
@@ -43,9 +52,6 @@ body {
   padding: 0;
 }
 
-.Weather a {
-  text-decoration: none;
-}
 
 .Weather .timeDateInfo {
   font-size: 14px;
