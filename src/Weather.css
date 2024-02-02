@@ -2,12 +2,18 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+
 :any-link{
   color:#8EAFE4;
 }
 
 .Weather a {
   text-decoration: none;
+}
+
+.titleName{
+  text-align: center;
+  font-weight: bold;
 }
 
 .Weather {
