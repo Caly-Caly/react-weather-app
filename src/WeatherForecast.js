@@ -14,6 +14,7 @@ export default function WeatherForecast(props) {
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
+    console.log(response);
   }
 
   function loadUp() {
@@ -21,7 +22,6 @@ export default function WeatherForecast(props) {
     let lati = props.coordinates.latitude;
     let long = props.coordinates.longitude;
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${long}&lat=${lati}&key=${apiKey}&units=metric`;
-
     axios.get(apiUrl).then(handleResponse);
   }
 
